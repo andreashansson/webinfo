@@ -1,0 +1,27 @@
+Skapa en cookie med jquery
+$.cookie('namnet på cookien', ett värde);
+
+Skapa en cookie och ta bort in om ex antal dagar (här 10)
+$.cookie('namnet på cookien', ett värde, {expires: 10});
+
+Ta bort cookien
+$removeCookie('namnet på cookien');
+
+function updateCookie() {
+  var email = $('#email-input').val();
+
+  if ($('#remember-input').prop('checked') && typeof email != 'undefined' && email.length > 0){
+    $.cookie('email', email, { expires: 365, path: '/' });
+  } else {
+    $.removeCookie('email', { path: '/' });
+  }
+}
+
+$(function() {
+
+  if($.cookie('email')){
+    $('#email-input').val($.cookie('email'));
+    $('#remember-input').prop('checked', true);
+  }
+});
+
