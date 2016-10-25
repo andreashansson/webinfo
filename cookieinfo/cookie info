@@ -1,5 +1,5 @@
 Skapa en cookie med jquery
-$.cookie('namnet på cookien', ett värde);
+$.cookie('namnet på cookien', ett värde); //ett värde är det värdet som skall lagras i cookien ex en mailadress.
 
 Skapa en cookie och ta bort in om ex antal dagar (här 10)
 $.cookie('namnet på cookien', ett värde, {expires: 10});

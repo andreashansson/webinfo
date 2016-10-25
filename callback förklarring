@@ -1,0 +1,6 @@
+Using a Callback Function
+A callback function is a function passed as a parameter to another function.
+
+If you have more than one AJAX task a website, you should create one function for executing the XMLHttpRequest object, and one callback function for each AJAX task.
+
+The function call should contain the URL and what function to call when the response is ready.

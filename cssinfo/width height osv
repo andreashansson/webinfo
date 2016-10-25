@@ -1,0 +1,4 @@
+Exempel jag har en header som är 100%
+
+Sen lägger jag i en div i den och sätter width 70% då blir den 70% av sin förälder.
+Sätter jag även margin-left auto och margin-right auto så hamnar den i mitten.
