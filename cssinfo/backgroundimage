@@ -1,0 +1,5 @@
+background-image: url("/images/background.png");
+background-position: center center;
+background-repeat: no-repeat; //Blir inte fler av den om den inte fyller upp överallt.
+background-attachment: fixed; //Den sitter fast när man skrollar.
+background-size: cover; //Den täcker upp allt utrymme.
